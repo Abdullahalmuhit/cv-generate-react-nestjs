@@ -42,6 +42,12 @@ export class CvService {
       .leftJoinAndSelect('experience.details', 'experienceDetails')
       .leftJoinAndSelect('projects.technologies', 'projectTechnologies')
       .where('personalInfo.id = :id', { id: cvId })
+      .orderBy('experience.startDate', 'DESC')
+      .addOrderBy('education.id', 'DESC')
+      .addOrderBy('publications.id', 'DESC')
+      .addOrderBy('projects.id', 'ASC')
+      .addOrderBy('skills.id', 'ASC')
+      .addOrderBy('languages.id', 'ASC')
       .getOne();
 
     if (!cv) {

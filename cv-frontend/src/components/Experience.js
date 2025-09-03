@@ -6,8 +6,8 @@ const Experience = ({ data }) => (
         {data.map((job, index) => (
             <div key={index} className="mb-4">
                 <h3 className="font-semibold">{job.title} – {job.company}</h3>
-                <p className="text-sm text-gray-600">{job.startDate} to {job.endDate}</p>
-                <p>{job.description}</p>
+                <h3 className="text-sm text-gray-600">{job.startDate} to {job.endDate}</h3>
+                <p>{job.details}</p>
             </div>
         ))}
     </section>
