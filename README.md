@@ -1,6 +1,6 @@
-# 📝 Survey Form Project
+# 📝 Cv Generate Form Project
 
-A full-stack application built using **React.js (Frontend)**, **NestJS (Backend)**, and **MySQL (Database)** to collect and manage survey responses.
+A full-stack application built using **React.js (Frontend)**, **NestJS (Backend)**, and **MySQL (Database)** to collect and manage Cv Generate responses.
 
 ---
 
@@ -9,7 +9,7 @@ A full-stack application built using **React.js (Frontend)**, **NestJS (Backend)
 - Collect user inputs: Name, Age, Satisfaction Level, Suggestions.
 - Save responses to a MySQL database.
 - View and manage submitted responses.
-- Delete specific survey entries.
+- Delete specific Cv Generate entries.
 - Modular code structure with clean API integration.
 
 ---
@@ -31,8 +31,8 @@ A full-stack application built using **React.js (Frontend)**, **NestJS (Backend)
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Abdullahalmuhit/survey-nestjs-reactjs
-cd survey-nestjs-reactjs
+git clone https://github.com/Abdullahalmuhit/Cv Generate-nestjs-reactjs
+cd Cv Generate-nestjs-reactjs
 ⚙️ Backend Setup (NestJS)
 bash
 Copy
@@ -47,7 +47,7 @@ DATABASE_HOST=localhost
 DATABASE_PORT=3306
 DATABASE_USERNAME=root
 DATABASE_PASSWORD=yourpassword
-DATABASE_NAME=survey_db
+DATABASE_NAME=Cv Generate_db
 Start the Backend Server
 bash
 Copy
@@ -60,7 +60,7 @@ Edit
 cd frontend
 npm install
 Configure API URL
-Update the Axios base URL in your frontend code (e.g., SurveyForm.jsx):
+Update the Axios base URL in your frontend code (e.g., Cv GenerateForm.jsx):
 
 js
 Copy
@@ -75,23 +75,23 @@ npm start
 css
 Copy
 Edit
-survey-nestjs-reactjs/
+Cv Generate-nestjs-reactjs/
 ├── backend/
 │   ├── src/
-│   │   ├── survey/
+│   │   ├── Cv Generate/
 │   │   └── main.ts
 │   └── .env
 ├── frontend/
 │   ├── src/
 │   │   ├── pages/
-│   │   │   ├── SurveyForm.jsx
-│   │   │   └── SurveyList.jsx
+│   │   │   ├── Cv GenerateForm.jsx
+│   │   │   └── Cv GenerateList.jsx
 │   └── index.jsx
 └── README.md
 📬 API Endpoints
 Method	Endpoint	Description
-GET	/surveys/:id	Get a survey by ID
-POST	/responses	Submit survey response
+GET	/Cv Generates/:id	Get a Cv Generate by ID
+POST	/responses	Submit Cv Generate response
 GET	/responses	Get all responses
 DELETE	/responses/:id	Delete a response
 
@@ -102,7 +102,7 @@ DELETE	/responses/:id	Delete a response
 
  Export responses to CSV/PDF
 
- Add admin panel for managing surveys
+ Add admin panel for managing Cv Generates
 
 📄 License
 This project is licensed under the MIT License.
